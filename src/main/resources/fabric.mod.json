@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "mcd_to_mc",
+	"version": "${version}",
+	"name": "MC Dungeons to MC",
+	"description": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+	"authors": [
+		"Mavity The Madity"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/mcd_to_mc/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.mavity.mcd_to_mc.MCDungeonsToMC"
+		],
+		"fabric-datagen": [
+			"net.mavity.mcd_to_mc.MCDungeonsToMCDataGenerator"
+		]
+	},
+	"mixins": [
+		"mcd_to_mc.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.7",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
