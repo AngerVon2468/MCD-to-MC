@@ -4,6 +4,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.mavity.mcd_to_mc.MCDungeonsToMC;
+import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseAnchorType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseSwordType;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -24,7 +25,7 @@ public class ItemInit {
     public static final Item SWORD = registerItem("sword_steel",
             new BaseSwordType(ToolMaterials.IRON, 2, -2.4f, new FabricItemSettings().maxDamage(0)));
     public static final Item ANCHOR = registerItem("anchor",
-            new SwordItem(ToolMaterials.DIAMOND, 10, -3.4f, new FabricItemSettings().maxDamage(0)));
+            new BaseAnchorType(ToolMaterials.DIAMOND, 10, -3.4f, new FabricItemSettings().maxDamage(0)));
 
     public static void registerMCDItems() {
         MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.MOD_ID + " has registered its' items.");
