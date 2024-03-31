@@ -16,6 +16,14 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	//Create Dependencies
+	maven { url = "https://mvn.devos.one/snapshots/" }
+	maven { url = "https://mvn.devos.one/releases/" }
+	maven { url = "https://jitpack.io/" }
+	maven { url = "https://maven.tterrag.com/" }
+	maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
+	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" }
 }
 
 fabricApi {
@@ -30,6 +38,7 @@ dependencies {
 
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
+	modImplementation("com.simibubi.create:create-fabric-${minecraft_version}:${create_version}")
 	
 	// Uncomment the following line to enable the deprecated Fabric API modules. 
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.

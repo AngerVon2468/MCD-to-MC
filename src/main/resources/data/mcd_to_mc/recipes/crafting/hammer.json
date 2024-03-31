@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "  b",
+    " a ",
+    "a  "
+  ],
+  "key": {
+    "a": {
+      "item": "minecraft:stick"
+    },
+    "b": {
+      "item": "mcd_to_mc:rough_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "mcd_to_mc:anchor",
+    "count": 1
+  }
+}
