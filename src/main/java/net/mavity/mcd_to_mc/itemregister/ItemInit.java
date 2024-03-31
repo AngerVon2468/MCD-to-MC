@@ -27,6 +27,9 @@ public class ItemInit {
     //ANCHOR
     public static final Item ANCHOR = registerItem("anchor",
             new BaseAnchorType(ToolMaterials.DIAMOND, 10, -3.4f, new FabricItemSettings().maxDamage(0)));
+    //HAMMER
+    public static final Item HAMMER = registerItem("hammer",
+            new BaseAnchorType(ToolMaterials.DIAMOND, 6, -2.8f, new FabricItemSettings().maxDamage(0)));
     //ROUGH IRON
     public static final Item ROUGH_IRON = registerItem("rough_iron", new Item(new FabricItemSettings().maxDamage(0).maxCount(64)));
     public static final Item ROUGH_IRON_INGOT = registerItem("rough_iron_ingot", new Item(new FabricItemSettings().maxDamage(0).maxCount(64)));

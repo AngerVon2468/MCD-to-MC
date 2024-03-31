@@ -1,9 +1,12 @@
 {
   "item.mcd_to_mc.sword_steel": "Sword",
   "item.mcd_to_mc.anchor": "Anchor",
+  "item.mcd_to_mc.hammer": "Great Hammer",
+
   "item.mcd_to_mc.rough_iron": "Rough Iron",
   "item.mcd_to_mc.rough_iron_ingot": "Rough Iron Ingot",
 
   "tooltip.mcd_to_mc.base_sword_type": "A sturdy and reliable blade, but with its magic, it could be of a good use.",
-  "tooltip.mcd_to_mc.base_anchor_type": "Those strong enough to wield the Anchor in battle follow the tradition of legendary seafaring warriors."
+  "tooltip.mcd_to_mc.base_anchor_type": "Those strong enough to wield the Anchor in battle follow the tradition of legendary seafaring warriors.",
+  "tooltip.mcd_to_mc.base_hammer_type": "Blacksmiths and soldiers alike use the Great Hammer for its strength in forging and in battle."
 }

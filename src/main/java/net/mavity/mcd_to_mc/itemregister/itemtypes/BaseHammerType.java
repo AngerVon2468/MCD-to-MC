@@ -20,11 +20,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.List;
 
-public class BaseAnchorType extends ToolItem implements Vanishable {
+public class BaseHammerType extends ToolItem implements Vanishable {
     private final float attackDamage;
     private final Multimap<EntityAttribute, EntityAttributeModifier> attributeModifiers;
 
-    public BaseAnchorType(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
+    public BaseHammerType(ToolMaterial toolMaterial, int attackDamage, float attackSpeed, Settings settings) {
         super(toolMaterial, settings);
         this.attackDamage = (float)attackDamage + toolMaterial.getAttackDamage();
         ImmutableMultimap.Builder<EntityAttribute, EntityAttributeModifier> builder = ImmutableMultimap.builder();
@@ -74,7 +74,7 @@ public class BaseAnchorType extends ToolItem implements Vanishable {
         return slot == EquipmentSlot.MAINHAND ? this.attributeModifiers : super.getAttributeModifiers(slot);
     }
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(Text.translatable("tooltip.mcd_to_mc.base_anchor_type"));
+        tooltip.add(Text.translatable("tooltip.mcd_to_mc.base_hammer_type"));
         super.appendTooltip(stack, world, tooltip, options);
     }
 
