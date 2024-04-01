@@ -2,6 +2,9 @@ package net.mavity.mcd_to_mc.itemregister.itemtypes;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.mavity.mcd_to_mc.MCDungeonsToMC;
+import net.mavity.mcd_to_mc.itemregister.ItemInit;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
@@ -77,5 +80,7 @@ public class BaseHammerType extends ToolItem implements Vanishable {
         tooltip.add(Text.translatable("tooltip.mcd_to_mc.base_hammer_type"));
         super.appendTooltip(stack, world, tooltip, options);
     }
-
+    public static void registerMCDHammerType() {
+        MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered a itemtype for its' hammers.");
+    }
 }

@@ -2,6 +2,7 @@ package net.mavity.mcd_to_mc.itemregister.itemtypes;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.mavity.mcd_to_mc.MCDungeonsToMC;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
 import net.minecraft.client.item.TooltipContext;
@@ -77,5 +78,7 @@ public class BaseSwordType extends ToolItem implements Vanishable {
         tooltip.add(Text.translatable("tooltip.mcd_to_mc.base_sword_type"));
         super.appendTooltip(stack, world, tooltip, options);
     }
-
+    public static void registerMCDSwordType() {
+        MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered a itemtype for its' swords.");
+    }
 }

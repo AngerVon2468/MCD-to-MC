@@ -45,7 +45,7 @@ public class ItemInit {
     public static final Item ROUGH_IRON_INGOT = registerItem("rough_iron_ingot", new Item(new FabricItemSettings().maxDamage(0).maxCount(64)));
     //LOGGER & CREATIVE MODE TABS
     public static void registerMCDItems() {
-        MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.MOD_ID + " has registered its' items.");
+        MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered its' items.");
 
         //CREATIVE MODE TAB ADDING
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(ItemInit::addToCombatTab);
