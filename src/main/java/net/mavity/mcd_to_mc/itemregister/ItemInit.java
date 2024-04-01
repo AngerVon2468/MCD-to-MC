@@ -10,10 +10,7 @@ import net.mavity.mcd_to_mc.MCDungeonsToMC;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseAnchorType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseHammerType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseSwordType;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemGroups;
-import net.minecraft.item.SwordItem;
-import net.minecraft.item.ToolMaterials;
+import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.Identifier;
@@ -30,7 +27,7 @@ public class ItemInit {
 
     public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MCDungeonsToMC.MOD_ID);
 
-    //REGISTRATE TESTING
+    //REGISTRATE TESTING - NOTE TO SELF, THIS DOESN'T WORK & CRASHES IF YOU TRY TO HAVE IT IN INVENTORY
     public static final ItemEntry<Item> something =
             REGISTRATE.item("something", Item::new)
                     .register();
