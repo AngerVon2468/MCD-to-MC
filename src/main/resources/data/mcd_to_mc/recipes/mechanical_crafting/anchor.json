@@ -1,0 +1,27 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "mcd_to_mc:rough_iron_ingot"
+    },
+    "B": {
+      "item": "minecraft:iron_ingot"
+    },
+    "C": {
+      "item": "minecraft:iron_nugget"
+    }
+  },
+  "pattern": [
+    "CBBBC",
+    "B A B",
+    "  A  ",
+    "  A  ",
+    " AAA ",
+    "  A  "
+  ],
+  "result": {
+    "count": 1,
+    "item": "mcd_to_mc:anchor"
+  }
+}

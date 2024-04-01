@@ -1,0 +1,128 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:iron_ingot"
+  },
+  "loops": 1,
+  "results": [
+    {
+      "item": "mcd_to_mc:rough_iron_ingot"
+    }
+  ],
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        },
+        [
+          {
+            "item": "minecraft:iron_ingot"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        },
+        [
+          {
+            "item": "create:brass_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        },
+        [
+          {
+            "item": "create:copper_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        },
+        [
+          {
+            "item": "create:brass_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ],
+      "results": [
+        {
+          "item": "mcd_to_mc:rough_iron"
+        }
+      ]
+    }
+  ],
+  "transitionalItem": {
+    "item": "mcd_to_mc:rough_iron"
+  }
+}
