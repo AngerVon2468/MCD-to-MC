@@ -1,0 +1,29 @@
+{
+  "type": "create:mechanical_crafting",
+  "acceptMirrored": false,
+  "key": {
+    "A": {
+      "item": "minecraft:golden_apple"
+    },
+    "B": {
+      "item": "create:brass_ingot"
+    },
+    "C": {
+      "item": "minecraft:gold_block"
+    },
+    "D": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "pattern": [
+    " BBB ",
+    "BDCDB",
+    "BCACB",
+    "BDCDB",
+    " BBB "
+  ],
+  "result": {
+    "count": 5,
+    "item": "minecraft:enchanted_golden_apple"
+  }
+}
