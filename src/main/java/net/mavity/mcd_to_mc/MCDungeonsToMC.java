@@ -5,6 +5,7 @@ import net.fabricmc.api.ModInitializer;
 import net.mavity.mcd_to_mc.itemregister.ItemInit;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseAnchorType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseHammerType;
+import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseStaffType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseSwordType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -28,5 +29,6 @@ public class MCDungeonsToMC implements ModInitializer {
 		BaseAnchorType.registerMCDAnchorType();
 		BaseHammerType.registerMCDHammerType();
 		BaseSwordType.registerMCDSwordType();
+		BaseStaffType.registerMCDStaffType();
 	}
 }

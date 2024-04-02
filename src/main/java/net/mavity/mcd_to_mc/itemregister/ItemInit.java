@@ -9,6 +9,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.mavity.mcd_to_mc.MCDungeonsToMC;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseAnchorType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseHammerType;
+import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseStaffType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseSwordType;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
@@ -43,6 +44,9 @@ public class ItemInit {
     //ROUGH IRON
     public static final Item ROUGH_IRON = registerItem("rough_iron", new SequencedAssemblyItem(new FabricItemSettings().maxDamage(0).maxCount(64)));
     public static final Item ROUGH_IRON_INGOT = registerItem("rough_iron_ingot", new Item(new FabricItemSettings().maxDamage(0).maxCount(64)));
+    //BATTLESTAFF
+    public static final Item BATTLESTAFF = registerItem("battlestaff",
+            new BaseStaffType(ToolMaterials.DIAMOND, 4, -0.9f, new FabricItemSettings()));
     //LOGGER & CREATIVE MODE TABS
     public static void registerMCDItems() {
         MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered its' items.");
