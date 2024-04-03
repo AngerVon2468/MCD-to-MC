@@ -8,10 +8,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.mavity.mcd_to_mc.MCDungeonsToMC;
 import net.mavity.mcd_to_mc.armourmaterialregister.MCDArmourMaterials;
-import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseAnchorType;
-import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseHammerType;
-import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseStaffType;
-import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseSwordType;
+import net.mavity.mcd_to_mc.itemregister.itemtypes.*;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
@@ -57,6 +54,9 @@ public class ItemInit {
             new ArmorItem(MCDArmourMaterials.ROUGH_IRON_TYPE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
     public static final Item ROUGH_IRON_HELMET = registerItem("rough_iron_helmet",
             new ArmorItem(MCDArmourMaterials.ROUGH_IRON_TYPE, ArmorItem.Type.HELMET, new FabricItemSettings()));
+    //GECKOLIB ARMOUR TEST
+    public static final Item GECKOLIB_TEST_HELMET = registerItem("geckolib_test_helmet",
+            new HunterArmourItem(MCDArmourMaterials.ROUGH_IRON_TYPE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     //LOGGER & CREATIVE MODE TABS
     public static void registerMCDItems() {
         MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered its' items.");
