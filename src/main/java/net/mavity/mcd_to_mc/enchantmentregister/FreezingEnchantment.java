@@ -26,10 +26,10 @@ public class FreezingEnchantment extends Enchantment {
 
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         if(target instanceof LivingEntity) {
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 10 * level, 2));
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 10 * level, 2));
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 10 * level, 2));
-            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 10 * level, 2));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.SLOWNESS, 20 * 10 * level, 2));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.WEAKNESS, 20 * 10 * level, 2));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.DARKNESS, 20 * 10 * level, 2));
+            ((LivingEntity) target).addStatusEffect(new StatusEffectInstance(StatusEffects.NIGHT_VISION, 20 * 10 * level, 2));
         }
 
         super.onTargetDamaged(user, target, level);
