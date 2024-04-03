@@ -34,6 +34,10 @@ public class BaseStaffType extends ToolItem implements Vanishable {
         this.attributeModifiers = builder.build();
     }
 
+    public int getDurability() {
+        return 1200;
+    }
+
     public float getAttackDamage() {
         return this.attackDamage;
     }

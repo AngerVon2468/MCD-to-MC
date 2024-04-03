@@ -34,13 +34,13 @@ public class ItemInit {
                     .register();
     //SWORD
     public static final Item SWORD = registerItem("sword_steel",
-            new BaseSwordType(ToolMaterials.IRON, 2, -2.4f, new FabricItemSettings().maxDamage(0)));
+            new BaseSwordType(ToolMaterials.IRON, 2, -2.4f, new FabricItemSettings()));
     //ANCHOR
     public static final Item ANCHOR = registerItem("anchor",
-            new BaseAnchorType(ToolMaterials.DIAMOND, 10, -3.4f, new FabricItemSettings().maxDamage(0)));
+            new BaseAnchorType(ToolMaterials.DIAMOND, 10, -3.4f, new FabricItemSettings()));
     //HAMMER
     public static final Item HAMMER = registerItem("hammer",
-            new BaseHammerType(ToolMaterials.DIAMOND, 6, -2.8f, new FabricItemSettings().maxDamage(0)));
+            new BaseHammerType(ToolMaterials.DIAMOND, 6, -2.8f, new FabricItemSettings()));
     //ROUGH IRON
     public static final Item ROUGH_IRON = registerItem("rough_iron", new SequencedAssemblyItem(new FabricItemSettings().maxDamage(0).maxCount(64)));
     public static final Item ROUGH_IRON_INGOT = registerItem("rough_iron_ingot", new Item(new FabricItemSettings().maxDamage(0).maxCount(64)));

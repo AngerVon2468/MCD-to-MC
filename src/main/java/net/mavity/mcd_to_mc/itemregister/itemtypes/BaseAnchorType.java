@@ -34,6 +34,10 @@ public class BaseAnchorType extends ToolItem implements Vanishable {
         this.attributeModifiers = builder.build();
     }
 
+    public int getDurability() {
+        return 2000;
+    }
+
     public float getAttackDamage() {
         return this.attackDamage;
     }

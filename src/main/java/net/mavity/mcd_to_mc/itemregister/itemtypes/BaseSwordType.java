@@ -34,6 +34,10 @@ public class BaseSwordType extends ToolItem implements Vanishable {
         this.attributeModifiers = builder.build();
     }
 
+    public int getDurability() {
+        return 900;
+    }
+
     public float getAttackDamage() {
         return this.attackDamage;
     }
