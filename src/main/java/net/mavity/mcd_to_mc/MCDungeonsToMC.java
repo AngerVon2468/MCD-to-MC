@@ -1,8 +1,12 @@
 package net.mavity.mcd_to_mc;
 
+import me.shedaniel.autoconfig.AutoConfig;
+import me.shedaniel.autoconfig.ConfigHolder;
 import net.fabricmc.api.ModInitializer;
 
 import net.mavity.mcd_to_mc.commandregister.CommandInit;
+import net.mavity.mcd_to_mc.config.MCDConfig;
+import net.mavity.mcd_to_mc.config.MavConfigSerializer;
 import net.mavity.mcd_to_mc.enchantmentregister.FreezingEnchantment;
 import net.mavity.mcd_to_mc.enchantmentregister.ThunderingEnchantment;
 import net.mavity.mcd_to_mc.itemregister.ItemInit;
@@ -26,11 +30,15 @@ public class MCDungeonsToMC implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static Enchantment THUNDERING = new ThunderingEnchantment();
 	public static Enchantment FREEZING = new FreezingEnchantment();
+	public static final ConfigHolder<MCDConfig> CONFIG = AutoConfig.register(
+			MCDConfig.class, MavConfigSerializer::new);
 	@Override
 	public void onInitialize() {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		AutoConfig.getConfigHolder(MCDConfig.class).getConfig();
+		CONFIG.load();
 
 		MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered its' main class.");
 		ItemInit.registerMCDItems();

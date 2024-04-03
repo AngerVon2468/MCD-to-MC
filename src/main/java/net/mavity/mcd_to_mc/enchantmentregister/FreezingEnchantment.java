@@ -11,7 +11,7 @@ import net.minecraft.entity.effect.StatusEffects;
 
 public class FreezingEnchantment extends Enchantment {
     public FreezingEnchantment() {
-        super(Enchantment.Rarity.UNCOMMON, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+        super(Enchantment.Rarity.RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
     }
 
     @Override
@@ -22,6 +22,16 @@ public class FreezingEnchantment extends Enchantment {
     @Override
     public int getMaxLevel() {
         return 3;
+    }
+
+    @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return MCDungeonsToMC.CONFIG.getConfig().doMCDEnchantments;
+    }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return MCDungeonsToMC.CONFIG.getConfig().doMCDEnchantments;
     }
 
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {

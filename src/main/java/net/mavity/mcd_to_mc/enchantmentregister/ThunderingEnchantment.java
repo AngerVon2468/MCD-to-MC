@@ -26,6 +26,16 @@ public class ThunderingEnchantment extends Enchantment {
     }
 
     @Override
+    public boolean isAvailableForEnchantedBookOffer() {
+        return MCDungeonsToMC.CONFIG.getConfig().doMCDEnchantments;
+    }
+
+    @Override
+    public boolean isAvailableForRandomSelection() {
+        return MCDungeonsToMC.CONFIG.getConfig().doMCDEnchantments;
+    }
+
+    @Override
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
         Random randombase = new Random();
         int random = randombase.nextInt(25);
