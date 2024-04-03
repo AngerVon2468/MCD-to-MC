@@ -24,7 +24,6 @@ repositories {
 	maven { url = "https://maven.tterrag.com/" }
 	maven { url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/" }
 	maven { url = "https://maven.jamieswhiteshirt.com/libs-release" }
-	maven { url = 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/' }
 }
 
 fabricApi {
@@ -45,7 +44,6 @@ dependencies {
 	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
 	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
-	modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.4:4.4.2'
 }
 
 processResources {
