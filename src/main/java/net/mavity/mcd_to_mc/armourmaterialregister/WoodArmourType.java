@@ -4,16 +4,17 @@ import net.mavity.mcd_to_mc.MCDungeonsToMC;
 import net.mavity.mcd_to_mc.itemregister.ItemInit;
 import net.minecraft.item.ArmorItem;
 import net.minecraft.item.ArmorMaterial;
+import net.minecraft.item.Items;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 import java.util.function.Supplier;
 
-public enum MCDArmourMaterials implements ArmorMaterial {
-    ROUGH_IRON_TYPE("rough_iron_type", 25, new int[] { 3, 8, 6, 3 }, 19,
-            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0.1f, () -> Ingredient.ofItems(ItemInit.ROUGH_IRON_INGOT));
+public enum WoodArmourType implements ArmorMaterial {
 
+    WOOD_TYPE("wood_type", 15, new int[] { 1, 3, 2, 1 }, 30,
+            SoundEvents.ITEM_ARMOR_EQUIP_NETHERITE, 2f, 0.1f, () -> Ingredient.ofItems(Items.OAK_WOOD));
     private final String name;
     private final int durabilityMultiplier;
     private final int[] protectionAmounts;
@@ -25,8 +26,8 @@ public enum MCDArmourMaterials implements ArmorMaterial {
 
     private static final int[] BASE_DURABILITY = { 11, 16, 15, 13 };
 
-    MCDArmourMaterials(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
-                       float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
+    WoodArmourType(String name, int durabilityMultiplier, int[] protectionAmounts, int enchantability, SoundEvent equipSound,
+                   float toughness, float knockbackResistance, Supplier<Ingredient> repairIngredient) {
         this.name = name;
         this.durabilityMultiplier = durabilityMultiplier;
         this.protectionAmounts = protectionAmounts;

@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a a",
+    "aaa",
+    "aaa"
+  ],
+  "key": {
+    "a": {
+      "item": "mcd_to_mc:rough_iron_ingot"
+    }
+  },
+  "result": {
+    "item": "mcd_to_mc:rough_iron_chestplate",
+    "count": 1
+  }
+}

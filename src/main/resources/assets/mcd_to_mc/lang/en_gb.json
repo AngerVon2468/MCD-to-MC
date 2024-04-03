@@ -10,6 +10,11 @@
   "enchantment.mcd_to_mc.freezing": "Freezing",
   "enchantment.mcd_to_mc.thundering": "Thundering",
 
+  "item.mcd_to_mc.rough_iron_helmet": "Rough Iron Helmet",
+  "item.mcd_to_mc.rough_iron_chestplate": "Rough Iron Chestplate",
+  "item.mcd_to_mc.rough_iron_leggings": "Rough Iron Leggings",
+  "item.mcd_to_mc.rough_iron_boots": "Rough Iron Boots",
+
   "tooltip.mcd_to_mc.base_sword_type": "A sturdy and reliable blade, but with its magic, it could be of a good use.",
   "tooltip.mcd_to_mc.base_anchor_type": "Those strong enough to wield the Anchor in battle follow the tradition of legendary seafaring warriors.",
   "tooltip.mcd_to_mc.base_hammer_type": "Blacksmiths and soldiers alike use the Great Hammer for its strength in forging and in battle.",
