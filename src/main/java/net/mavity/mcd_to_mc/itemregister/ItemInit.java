@@ -7,6 +7,7 @@ import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.mavity.mcd_to_mc.MCDungeonsToMC;
+import net.mavity.mcd_to_mc.armourmaterialregister.MCDArmourMaterials;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseAnchorType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseHammerType;
 import net.mavity.mcd_to_mc.itemregister.itemtypes.BaseStaffType;
@@ -47,6 +48,15 @@ public class ItemInit {
     //BATTLESTAFF
     public static final Item BATTLESTAFF = registerItem("battlestaff",
             new BaseStaffType(ToolMaterials.DIAMOND, 4, -0.9f, new FabricItemSettings()));
+    //ROUGH IRON ARMOUR
+    public static final Item ROUGH_IRON_BOOTS = registerItem("rough_iron_boots",
+            new ArmorItem(MCDArmourMaterials.ROUGH_IRON_TYPE, ArmorItem.Type.BOOTS, new FabricItemSettings()));
+    public static final Item ROUGH_IRON_LEGGINGS = registerItem("rough_iron_leggings",
+            new ArmorItem(MCDArmourMaterials.ROUGH_IRON_TYPE, ArmorItem.Type.LEGGINGS, new FabricItemSettings()));
+    public static final Item ROUGH_IRON_CHESTPLATE = registerItem("rough_iron_chestplate",
+            new ArmorItem(MCDArmourMaterials.ROUGH_IRON_TYPE, ArmorItem.Type.CHESTPLATE, new FabricItemSettings()));
+    public static final Item ROUGH_IRON_HELMET = registerItem("rough_iron_helmet",
+            new ArmorItem(MCDArmourMaterials.ROUGH_IRON_TYPE, ArmorItem.Type.HELMET, new FabricItemSettings()));
     //LOGGER & CREATIVE MODE TABS
     public static void registerMCDItems() {
         MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered its' items.");

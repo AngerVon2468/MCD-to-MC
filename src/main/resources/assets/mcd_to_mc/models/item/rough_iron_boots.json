@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "mcd_to_mc:item/rough_iron_boots"
+  }
+}
