@@ -35,12 +35,12 @@ public class DeathEnchantment extends Enchantment {
 
     @Override
     public boolean isAvailableForEnchantedBookOffer() {
-        return MCDungeonsToMC.CONFIG.getConfig().doOptionalEnchantments;
+        return MCDungeonsToMC.CONFIG.getConfig().doOptionalEnchantmentsLootTables;
     }
 
     @Override
     public boolean isAvailableForRandomSelection() {
-        return MCDungeonsToMC.CONFIG.getConfig().doOptionalEnchantments;
+        return MCDungeonsToMC.CONFIG.getConfig().doOptionalEnchantmentsLootTables;
     }
 
     public void onTargetDamaged(LivingEntity user, Entity target, int level) {
