@@ -7,6 +7,7 @@ import net.fabricmc.api.ModInitializer;
 import net.mavity.mcd_to_mc.commandregister.CommandInit;
 import net.mavity.mcd_to_mc.config.MCDConfig;
 import net.mavity.mcd_to_mc.config.MavConfigSerializer;
+import net.mavity.mcd_to_mc.enchantmentregister.DeathEnchantment;
 import net.mavity.mcd_to_mc.enchantmentregister.FreezingEnchantment;
 import net.mavity.mcd_to_mc.enchantmentregister.ThunderingEnchantment;
 import net.mavity.mcd_to_mc.itemregister.ItemInit;
@@ -30,6 +31,7 @@ public class MCDungeonsToMC implements ModInitializer {
 	// That way, it's clear which mod wrote info, warnings, and errors.
 	public static Enchantment THUNDERING = new ThunderingEnchantment();
 	public static Enchantment FREEZING = new FreezingEnchantment();
+	public static Enchantment DEATH = new DeathEnchantment();
 	public static final ConfigHolder<MCDConfig> CONFIG = AutoConfig.register(
 			MCDConfig.class, MavConfigSerializer::new);
 	@Override
@@ -52,5 +54,6 @@ public class MCDungeonsToMC implements ModInitializer {
 
 		Registry.register(Registries.ENCHANTMENT, new Identifier(MCDungeonsToMC.MOD_ID, "thundering"), THUNDERING);
 		Registry.register(Registries.ENCHANTMENT, new Identifier(MCDungeonsToMC.MOD_ID, "freezing"), FREEZING);
+		Registry.register(Registries.ENCHANTMENT, new Identifier(MCDungeonsToMC.MOD_ID, "death"), DEATH);
 	}
 }

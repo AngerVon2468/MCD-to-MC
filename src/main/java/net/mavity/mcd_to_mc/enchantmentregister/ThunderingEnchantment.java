@@ -2,9 +2,11 @@ package net.mavity.mcd_to_mc.enchantmentregister;
 
 
 import net.mavity.mcd_to_mc.MCDungeonsToMC;
+import net.mavity.mcd_to_mc.itemregister.ItemTags;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.*;
+import net.minecraft.item.ItemStack;
 import net.minecraft.util.math.BlockPos;
 
 import java.util.Random;
@@ -13,6 +15,11 @@ import java.util.Random;
 public class ThunderingEnchantment extends Enchantment {
     public ThunderingEnchantment() {
         super(Enchantment.Rarity.VERY_RARE, EnchantmentTarget.WEAPON, new EquipmentSlot[] {EquipmentSlot.MAINHAND});
+    }
+
+    @Override
+    public boolean isAcceptableItem(ItemStack stack) {
+        return stack.isIn(ItemTags.APPLY_ENCHANT_TAG);
     }
 
     @Override
