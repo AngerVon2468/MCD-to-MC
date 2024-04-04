@@ -8,7 +8,7 @@ import net.minecraft.enchantment.EnchantmentTarget;
 import net.minecraft.entity.*;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
-import net.minecraft.item.AxeItem;
+//import net.minecraft.item.AxeItem;
 import net.minecraft.item.CrossbowItem;
 import net.minecraft.item.ItemStack;
 
