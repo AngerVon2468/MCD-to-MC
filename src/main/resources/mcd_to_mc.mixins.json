@@ -3,9 +3,9 @@
 	"package": "net.mavity.mcd_to_mc.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
-		"DamageMixin",
-		"MixinTwo"
-	],
+      "DamageMixin",
+      "UnbreakingMixin"
+    ],
 	"injectors": {
 		"defaultRequire": 1
 	}
