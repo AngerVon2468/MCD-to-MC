@@ -27,12 +27,12 @@ public class ThunderingEnchantment extends Enchantment {
 
     @Override
     public int getMinPower(int level) {
-        return 1;
+        return MCDungeonsToMC.CONFIG.getConfig().minMCDEnchantLevel;
     }
 
     @Override
     public int getMaxLevel() {
-        return 3;
+        return MCDungeonsToMC.CONFIG.getConfig().maxMCDEnchantLevel;
     }
 
     @Override
