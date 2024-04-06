@@ -4,7 +4,6 @@ import me.shedaniel.autoconfig.AutoConfig;
 import me.shedaniel.autoconfig.ConfigHolder;
 import net.fabricmc.api.ModInitializer;
 
-import net.mavity.mcd_to_mc.blockregister.BlockInit;
 import net.mavity.mcd_to_mc.commandregister.CommandInit;
 import net.mavity.mcd_to_mc.config.MCDConfig;
 import net.mavity.mcd_to_mc.config.MavConfigSerializer;
@@ -53,7 +52,6 @@ public class MCDungeonsToMC implements ModInitializer {
 		FreezingEnchantment.registerMCDFreezingEnchantment();
 		ThunderingEnchantment.registerMCDThunderingEnchantment();
 		DeathEnchantment.registerMCDFreezingEnchantment();
-		BlockInit.registerMCDBlocks();
 
 		Registry.register(Registries.ENCHANTMENT, new Identifier(MCDungeonsToMC.MOD_ID, "thundering"), THUNDERING);
 		Registry.register(Registries.ENCHANTMENT, new Identifier(MCDungeonsToMC.MOD_ID, "freezing"), FREEZING);
