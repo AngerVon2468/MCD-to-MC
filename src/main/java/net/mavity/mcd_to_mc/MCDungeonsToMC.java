@@ -48,10 +48,12 @@ public class MCDungeonsToMC implements ModInitializer {
 		BaseHammerType.registerMCDHammerType();
 		BaseSwordType.registerMCDSwordType();
 		BaseStaffType.registerMCDStaffType();
-		CommandInit.wiiuCommand();
 		FreezingEnchantment.registerMCDFreezingEnchantment();
 		ThunderingEnchantment.registerMCDThunderingEnchantment();
 		DeathEnchantment.registerMCDFreezingEnchantment();
+
+		CommandInit.wiiuCommand();
+		CommandInit.sourcesCommand();
 
 		Registry.register(Registries.ENCHANTMENT, new Identifier(MCDungeonsToMC.MOD_ID, "thundering"), THUNDERING);
 		Registry.register(Registries.ENCHANTMENT, new Identifier(MCDungeonsToMC.MOD_ID, "freezing"), FREEZING);
