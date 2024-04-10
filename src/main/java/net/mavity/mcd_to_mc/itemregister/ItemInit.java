@@ -26,13 +26,6 @@ public class ItemInit {
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MCDungeonsToMC.MOD_ID, name), item);
     }
-
-    public static final CreateRegistrate REGISTRATE = CreateRegistrate.create(MCDungeonsToMC.MOD_ID);
-
-    //REGISTRATE TESTING - NOTE TO SELF, THIS DOESN'T WORK & CRASHES IF YOU TRY TO HAVE IT IN INVENTORY
-    public static final ItemEntry<Item> something =
-            REGISTRATE.item("something", Item::new)
-                    .register();
     //SWORD
     public static final Item SWORD = registerItem("sword_steel",
             new BaseSwordType(ToolMaterials.IRON, 2, -2.4f, new FabricItemSettings()));
