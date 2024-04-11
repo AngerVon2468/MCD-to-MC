@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    " bb",
-    " ab",
+    "  a",
+    " b",
     "a  "
   ],
   "key": {
@@ -15,7 +15,7 @@
     }
   },
   "result": {
-    "item": "mcd_to_mc:hammer",
+    "item": "mcd_to_mc:battlestaff",
     "count": 1
   }
 }
