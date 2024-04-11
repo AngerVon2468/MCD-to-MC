@@ -50,7 +50,7 @@ public class MCDungeonsToMC implements ModInitializer {
 		BaseStaffType.registerMCDStaffType();
 		FreezingEnchantment.registerMCDFreezingEnchantment();
 		ThunderingEnchantment.registerMCDThunderingEnchantment();
-		DeathEnchantment.registerMCDFreezingEnchantment();
+		DeathEnchantment.registerMCDDeathEnchantment();
 
 		CommandInit.wiiuCommand();
 		CommandInit.sourcesCommand();

@@ -21,10 +21,12 @@ public class ItemInit {
         entries.add(ItemInit.SWORD);
         entries.add(ItemInit.ANCHOR);
         entries.add(ItemInit.HAMMER);
+        entries.add(ItemInit.BATTLESTAFF);
         entries.add(ItemInit.ROUGH_IRON_BOOTS);
         entries.add(ItemInit.ROUGH_IRON_LEGGINGS);
         entries.add(ItemInit.ROUGH_IRON_CHESTPLATE);
         entries.add(ItemInit.ROUGH_IRON_HELMET);
+        entries.add(ItemInit.SHIELD);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MCDungeonsToMC.MOD_ID, name), item);

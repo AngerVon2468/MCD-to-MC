@@ -166,7 +166,7 @@ public class DeathEnchantment extends Enchantment {
             super.onTargetDamaged(user, target, level);
         }
     }
-    public static void registerMCDFreezingEnchantment() {
-        MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered an enchantment called freezing.");
+    public static void registerMCDDeathEnchantment() {
+        MCDungeonsToMC.LOGGER.info(MCDungeonsToMC.NAME + " has registered an enchantment called death.");
     }
 }
