@@ -1,8 +1,7 @@
 package net.mavity.mcd_to_mc.itemregister;
 
+import com.github.crimsondawn45.fabricshieldlib.lib.object.FabricShieldItem;
 import com.simibubi.create.content.processing.sequenced.SequencedAssemblyItem;
-import com.simibubi.create.foundation.data.CreateRegistrate;
-import com.tterrag.registrate.util.entry.ItemEntry;
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.itemgroup.v1.FabricItemGroupEntries;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
@@ -22,10 +21,17 @@ public class ItemInit {
         entries.add(ItemInit.SWORD);
         entries.add(ItemInit.ANCHOR);
         entries.add(ItemInit.HAMMER);
+        entries.add(ItemInit.ROUGH_IRON_BOOTS);
+        entries.add(ItemInit.ROUGH_IRON_LEGGINGS);
+        entries.add(ItemInit.ROUGH_IRON_CHESTPLATE);
+        entries.add(ItemInit.ROUGH_IRON_HELMET);
     }
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, new Identifier(MCDungeonsToMC.MOD_ID, name), item);
     }
+    //SHIELD 2.0
+    public static final Item SHIELD = registerItem("shield",
+            new FabricShieldItem(new FabricItemSettings().maxDamage(2000), 10, 13, ItemInit.ROUGH_IRON_INGOT));
     //SWORD
     public static final Item SWORD = registerItem("sword_steel",
             new BaseSwordType(ToolMaterials.IRON, 2, -2.4f, new FabricItemSettings()));
